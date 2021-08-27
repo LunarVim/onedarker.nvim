@@ -19,8 +19,8 @@ local colors = {
 -- LuaFormatter on
 return {
   normal = {
-    a = {fg = colors.orange, bg = colors.blue, gui = 'bold'},
-    b = {fg = colors.fg, bg = colors.bg},
+    a = {fg = colors.fg, bg = colors.blue, gui = 'bold'},
+    b = {fg = colors.orange, bg = colors.bg},
     c = {fg = colors.fg, bg = colors.bg}
   },
   insert = {a = {fg = colors.bg, bg = colors.green, gui = 'bold'}},
