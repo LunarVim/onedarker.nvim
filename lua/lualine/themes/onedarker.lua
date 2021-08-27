@@ -20,7 +20,7 @@ local colors = {
 return {
   normal = {
     a = {fg = colors.fg, bg = colors.blue, gui = 'bold'},
-    b = {fg = colors.purple, bg = colors.bg},
+    b = {fg = colors.fg, bg = colors.bg},
     c = {fg = colors.fg, bg = colors.bg}
   },
   insert = {a = {fg = colors.bg, bg = colors.green, gui = 'bold'}},
