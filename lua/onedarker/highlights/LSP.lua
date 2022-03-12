@@ -1,3 +1,6 @@
+local Config = require "onedarker.config"
+local C = require "onedarker.palette"
+
 local LSP = {
   LspDiagnosticsDefaultError = { fg = C.error_red },
   LspDiagnosticsDefaultWarning = { fg = C.warning_orange },

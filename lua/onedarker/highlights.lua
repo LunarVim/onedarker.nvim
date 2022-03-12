@@ -1,4 +1,9 @@
-local highlights = {
+local M = {}
+
+local Config = require "onedarker.config"
+local C = require "onedarker.palette"
+
+local common = {
   Normal = { fg = C.fg, bg = Config.transparent_background and "NONE" or C.bg },
   SignColumn = { bg = C.bg },
   MsgArea = { fg = C.fg, bg = Config.transparent_background and "NONE" or C.bg },
@@ -104,4 +109,47 @@ local highlights = {
   CmpItemMenu = { fg = C.light_gray, bg = C.none },
 }
 
-return highlights
+local function highlight(group, properties)
+  local bg = properties.bg == nil and "" or "guibg=" .. properties.bg
+  local fg = properties.fg == nil and "" or "guifg=" .. properties.fg
+  local style = properties.style == nil and "" or "gui=" .. properties.style
+
+  local cmd_str = table.concat({
+    "highlight",
+    group,
+    bg,
+    fg,
+    style,
+  }, " ")
+
+  vim.cmd(cmd_str)
+end
+
+function M.setup()
+  local Treesitter = require "onedarker.highlights.Treesitter"
+  local markdown = require "onedarker.highlights.markdown"
+  local Whichkey = require "onedarker.highlights.Whichkey"
+  local Notify = require "onedarker.highlights.Notify"
+  local Git = require "onedarker.highlights.Git"
+  local LSP = require "onedarker.highlights.LSP"
+  local Diff = require "onedarker.highlights.Diff"
+
+  local skeletons = {
+    common,
+    Treesitter,
+    markdown,
+    Whichkey,
+    Notify,
+    Git,
+    LSP,
+    Diff,
+  }
+
+  for _, skeleton in ipairs(skeletons) do
+    for group, properties in pairs(skeleton) do
+      highlight(group, properties)
+    end
+  end
+end
+
+return M

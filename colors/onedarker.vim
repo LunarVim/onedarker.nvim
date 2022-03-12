@@ -1,13 +1,7 @@
-" Author: Christian Chiarulli <chrisatmachine@gmail.com>
-
 lua << EOF
-package.loaded['onedarker'] = nil
-package.loaded['onedarker.highlights'] = nil
-package.loaded['onedarker.Treesitter'] = nil
-package.loaded['onedarker.markdown'] = nil
-package.loaded['onedarker.Whichkey'] = nil
-package.loaded['onedarker.Git'] = nil
-package.loaded['onedarker.LSP'] = nil
+for k in pairs(package.loaded) do
+  if k:match(".*onedarker.*") then package.loaded[k] = nil end
+end
 
-require("onedarker")
+require('onedarker').setup()
 EOF

@@ -1,3 +1,5 @@
+local C = require "onedarker.palette"
+
 local Treesitter = {
   TSComment = { fg = C.gray },
   TSAnnotation = { fg = C.blue },
