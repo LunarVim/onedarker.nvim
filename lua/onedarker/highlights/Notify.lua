@@ -1,3 +1,5 @@
+local C = require "onedarker.palette"
+
 local Notify = {
   NotifyERRORBorder = { fg = C.error_red },
   NotifyWARNBorder = { fg = C.warning_orange },

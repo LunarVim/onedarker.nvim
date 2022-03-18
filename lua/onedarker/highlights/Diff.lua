@@ -1,4 +1,6 @@
-local diff = {
+local C = require "onedarker.palette"
+
+local Diff = {
   DiffAdd = { fg = C.none, bg = C.diff_add },
   DiffDelete = { fg = C.none, bg = C.diff_delete },
   DiffChange = { fg = C.none, bg = C.diff_change, style = "bold" },
@@ -9,4 +11,4 @@ local diff = {
   DiffIndexLine = { fg = C.gray },
 }
 
-return diff
+return Diff

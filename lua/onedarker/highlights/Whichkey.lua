@@ -1,3 +1,5 @@
+local C = require "onedarker.palette"
+
 local Whichkey = {
   WhichKey = { fg = C.purple },
   WhichKeySeperator = { fg = C.green },

@@ -1,3 +1,5 @@
+local C = require "onedarker.palette"
+
 local Git = {
   SignAdd = { fg = C.sign_add },
   SignChange = { fg = C.sign_change },

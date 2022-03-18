@@ -1,3 +1,5 @@
+local C = require "onedarker.palette"
+
 local markdown = {
   markdownBlockquote = { fg = C.accent },
   markdownBold = { fg = C.yellow, style = "bold" },
