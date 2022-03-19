@@ -10,6 +10,7 @@ function M.setup()
   vim.o.termguicolors = true
   vim.g.colors_name = "onedarker"
   highlights.setup()
+  vim.cmd [[colorscheme onedarker]]
 end
 
 return M
