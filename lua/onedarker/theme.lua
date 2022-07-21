@@ -54,9 +54,9 @@ theme.set_highlights = function()
   hl(0, "Directory", { fg = c.folder_blue, bg = 'NONE' })
   hl(0, "SpecialKey", { fg = c.blue, bg = 'NONE', bold=true, })
   hl(0, "ErrorMsg", { fg = c.error_red, bg = c.bg, bold=true, })
-  hl(0, "Search", { fg = c.light_gray, bg = c.ui5_blue })
-  hl(0, "IncSearch", { fg = c.ui2_orange, bg = c.light_gray })
-  hl(0, "Substitute", { fg = c.light_gray, bg = c.ui2_orange })
+  hl(0, "Search", { fg = 'NONE', bg = c.ui5_blue })
+  hl(0, "IncSearch", { fg = c.ui2_orange, bg = 'NONE' })
+  hl(0, "Substitute", { fg = c.ui2_orange, bg = 'NONE' })
   hl(0, "MoreMsg", { fg = c.orange, bg = 'NONE' })
   hl(0, "Question", { fg = c.orange, bg = 'NONE' })
   hl(0, "EndOfBuffer", { fg = c.bg, bg = 'NONE' })
@@ -269,7 +269,7 @@ theme.set_highlights = function()
   -- Telescope
   hl(0, "TelescopeSelection", { fg = 'NONE', bg = c.ui2_blue })
   hl(0, "TelescopeMatching", { fg = c.info_yellow, bg = 'NONE', bold=true, italic=true, })
-  hl(0, "TelescopeBorder", { fg = c.blue, bg = 'NONE' })
+  hl(0, "TelescopeBorder", { fg = c.fg, bg = 'NONE' })
 
   -- NvimTree
   hl(0, "NvimTreeFolderIcon", { link = 'Directory' })
@@ -327,6 +327,7 @@ theme.set_highlights = function()
   -- IndentBlankline
   hl(0, "IndentBlanklineContextChar", { fg = c.context, bg = 'NONE' })
   hl(0, "IndentBlanklineContextStart", { fg = 'NONE', bg = 'NONE', underline=true, })
+  hl(0, "IndentBlanklineChar", { fg = c.dark_gray, bg = 'NONE' })
 
   -- Dashboard
   hl(0, "DashboardHeader", { fg = c.blue, bg = 'NONE' })
