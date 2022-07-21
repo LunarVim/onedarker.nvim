@@ -275,6 +275,8 @@ theme.set_highlights = function()
   hl(0, "TelescopePromptPrefix", { fg = c.hint_blue, bg = 'NONE' })
   hl(0, "TelescopeResultsTitle", { fg = c.orange, bg = 'NONE' })
   hl(0, "TelescopePreviewTitle", { fg = c.orange, bg = 'NONE' })
+  hl(0, "TelescopePromptCounter", { fg = c.red, bg = 'NONE' })
+  hl(0, "TelescopePreviewHyphen", { fg = c.red, bg = 'NONE' })
 
   -- NvimTree
   hl(0, "NvimTreeFolderIcon", { link = 'Directory' })
