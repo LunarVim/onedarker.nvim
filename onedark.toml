@@ -354,7 +354,7 @@ QuickScopeSecondary = '#00dfff - u'
 [Telescope]
 TelescopeSelection = '- ui2_blue'
 TelescopeSelectionCaret = 'red ui2_blue'
-TelescopeMatching = 'info - bi'
+TelescopeMatching = 'yellow - bi'
 TelescopeBorder = 'alt_fg'
 TelescopeNormal = 'fg alt_bg'
 TelescopePromptTitle = "orange"
