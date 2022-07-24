@@ -311,8 +311,6 @@ theme.set_highlights = function()
   hl(0, "LspCodeLensSeparator", { fg = c.context, bg = "NONE", italic = true })
   hl(0, "LspInlayHint", { fg = c.gray, bg = "#232730", italic = true })
 
-
-
   -- Quickscope
   hl(0, "QuickScopePrimary", { fg = "#ff007c", bg = "NONE", underline = true })
   hl(0, "QuickScopeSecondary", { fg = "#00dfff", bg = "NONE", underline = true })
