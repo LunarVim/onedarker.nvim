@@ -1,5 +1,7 @@
 # Onedarker
-Onedark inspired colorscheme written in lua.
+![newest](https://user-images.githubusercontent.com/696094/194201370-dba2a888-463a-45e4-89b7-a20ba6da7bde.png)
+
+Onedarker inspired colorscheme written in lua.
 
 ## Showcase
 
